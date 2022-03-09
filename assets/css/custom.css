@@ -1,4 +1,12 @@
 /*    Bootstrap custom file      */
+.container{
+    background-color:#9ff8f9;
+}
+
+.container_main{
+    background-color:#ffffff;
+}
+
 
 .row{
     margin-top:2.5rem;
