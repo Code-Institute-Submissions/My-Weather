@@ -83,7 +83,7 @@ function displayWeather(){
    descElement.innerHTML = weather.description;
    locationElement.innerHTML = `${weather.city}, ${weather.country}`;
    locationPressureElement.innerHTML = `${weather.getPressure}<span> hPa</span>`;
-   locationTempMin.innerHTML = `${weather.getMinTemp}<span>Min Wind</span>`;
-   locationTempMax.innerHTML = weather.getMaxTemp;
+   locationTempMin.innerHTML = `${weather.getMinTemp}<span> Min Wind</span>`;
+   locationTempMax.innerHTML = `${weather.getMaxTemp}<span> Max Wind</span>`;
 
 }
