@@ -27,42 +27,68 @@
                 <input type="text" id="fname" name="fname">
                 <input type="submit" value="Get location">
             </div>
-      <!---  </div> keep current weather to one side 
-        <div class="row"> -->
-            <div class="weather-icon">
-                <img src="" alt="">
-                <!--Download icon-->
-            </div>
-            <div class="col-md-9">
+        </div> <!--keep current weather to one side  -->
+
+
+
+        <div class="row">
+            <div class="col">
+                <div class="weather-icon">
+                    <img src="" alt="">
+                    <!--Download icon-->
+                </div>
+                
                 <div class="temperature-value">
                     <p>- °<span>C</span></p>
                 </div>
-            </div>
-            <div class="temperature-description">
-                <p> - </p>
-            </div>
-            <div class="location">
-                <p>-</p>
-            </div>
-            <div class="col-md-9">
+                    
+                <div class="temperature-description">
+                    <p> - </p>
+                </div>
+                <div class="location">
+                    <p>-</p>
+                </div>
+
                 <div class="location_pressure">
                     <p>- °<span>QNH</span></p>
                 </div>
-            </div>
 
-            <div class="location_temp-min">
-                <p>-</p>
-            </div>
+                <div class="location_temp-min">
+                    <p>-</p>
+                </div>
 
-            <div class="location_temp-max">
-                <p>-</p>
-            </div>
+                <div class="location_temp-max">
+                    <p>-</p>
+                </div>
 
-            <div class="location_time">
-                <p>-</p>
+                <div class="location_time">
+                    <p>-</p>
+                </div>
+            </div><!--col-md-6 end-->
+
+            <div class="col">
+                <div class="weatherForecast">
+                    <h4>This is the weather forecast</h4>
+                    <!--Work on this to have 5 days weather array like forecast-->
+                    <div class="row">
+                        Monday
+                    </div>
+                    <div class="row">
+                        Tuesday
+                    </div>
+                    <div class="row">
+                        Wednesday
+                    </div>
+                    <div class="row">
+                        Thursday
+                    </div>
+                    <div class="row">
+                        Friday
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+        </div> <!--end .row-->
+    </div> <!--end container-->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
