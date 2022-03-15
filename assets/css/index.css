@@ -1,29 +1,22 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body{
-    font-family: "Nunito",sans-serif;
-    background: #f8f8f8;
-  }
+.weather__forecast {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+.weather__forecast__icon {
+  width: 50%;
+}
 
-  .container{
-    background-color:greenyellow;
-  }
-
-
-  /*     Weather Forecast css          */
-  
-  .col{
-    display:flex;
-  }
-
-  .weatherForecast{
-    flex:20%; 
-    padding:5px solid pink;
-  }
-  
-
+.weather__forecast__item {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin: 0 10px 10px;
+  padding: 30px 5px 20px;
+  box-sizing: border-box;
+  min-width: 150px;
+  width: calc(20% - 20px);
+  flex-grow: 1;
+}
