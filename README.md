@@ -1,4 +1,5 @@
-# My-Weather# Code-Institute
+# My-Weather
+# Code Institute
 # JavaScript Essentials Portfolio 2
 
 ## Table of contents
@@ -58,6 +59,7 @@ The fonts that I chose are from the Google Fonts library. I chose to use [Google
 * [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started)
 * [JavaScript]
 * [Bootstrap 5](https://getbootstrap.com/)
+* [OpenWeatherAPI](https://openweathermap.org/api)
 <!--	
 ## Setup
 To run this project, install it locally using npm:
