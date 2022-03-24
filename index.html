@@ -21,76 +21,102 @@
                 </div>
             </div>
         </div>
-<!--
-            <div class="row align-items-left">
-                <div class="col-sm-12">
-                    <input type="text" id="fname" name="fname">
-                    <input type="submit" value="Get location">
+        <div class="Weather">
+            <input
+                type="search"
+                list="suggestions"
+                class="weatherSearch"
+                placeholder="Enter city"
+            />
+            <div class="weather__today">
+                <div class="weather__details">
+                    <h2 class="weatherCityName">City</h2>
+                    <p class="weatherCurrentDay">Day</p>
+                    <p class="weatherDate">7/24/2021</p>
+                        <div class="currentWeather">
+                            <p class="currentWeatherHumidity">
+                                <span class="weather__indicator_humiditiy">50</span> %
+                            </p> 
+                            <p class="weather_indicator weather_indicator_wind">
+                                <span class="wind-value">West, 5</span> km/s
+                            </p>
+                            <p class="weather_indicator weather_indicator_pressure">
+                                <span class="pressure-value">1050</span>hpa
+                            </p>
+                        </div>
+                </div>
+                <img
+                    src="images/clear-sky.png"
+                    alt="clear-sky"
+                    class="weather__image"
+                />
+                <div class="weather_temperature">
+                    <span class="temperature-value">+25</span> &deg;C
                 </div>
             </div>
-            <--keep current weather to one side  -->
 
-
-        <div class="row">
-            <div class="col-sm-5">
-                <div id="currentWeatherForecast">
-                    <div class="currentWeatherDate">
-                        <div class="currentTime">
-                            10:00 <span id="AM_PM">AM</span>
-                        </div>
-                        <div class="currentDate">
-                            Monday, January 1, 2022
-                        </div>
-                        <div class="currentWeatherItems">
-                            <!--Add current weather items in here such as Min/Max temperature, pressure, windspeed/direction-->
-                                
-
-
-
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- end col-sm-4-->
-
-            <div class="futureWeatherForecast">
-                <div class="weatherForecastToday">
-                    <div class="day">Monday</div>
-                    <div class="tempDay">15</div>
-                    <div class="tempNight">3</div>  
-                </div>
-                <div class="weatherForecastItem">
-                    <div class="day">Tues</div>
-                    <div class="tempDay">18</div>
-                    <div class="tempNight">3</div>
-                </div>
-
-                <div class="weatherForecastItem">
-                    <div class="day">Wed</div>
-                    <div class="tempDay">18</div>
-                    <div class="tempNight">3</div>
-                </div>
-
-                <div class="weatherForecastItem">
-                    <div class="day">Thurs</div>
-                    <div class="tempDay">18</div>
-                    <div class="tempNight">3</div>
-                </div>
-
-                <div class="weatherForecastItem">
-                    <div class="day">Fri</div>
-                    <div class="tempDay">18</div>
-                    <div class="tempNight">3</div>
-                </div>
-
-                <div class="weatherForecastItem">
-                    <div class="day">Sat</div>
-                    <div class="tempDay">18</div>
-                    <div class="tempNight">3</div>
-                </div>
+            <div class="weather__forecast">
+                <article class="weather__forecast__item">
+                <img
+                    src="images/clear-sky.png"
+                    alt="clear-sky"
+                    class="weather__forecast__icon"
+                />
+                <h3 class="weather__forecast__day">Day</h3>
+                <p class="weather_forecast__temperature">
+                    <span class="value">+25</span> &deg;C
+                </p>
+                </article>
+        
+                <article class="weather__forecast__item">
+                <img
+                    src="images/clear-sky.png"
+                    alt="clear-sky"
+                    class="weather__forecast__icon"
+                />
+                <h3 class="weather__forecast__day">Day</h3>
+                <p class="weather_forecast__temperature">
+                    <span class="value">+25</span> &deg;C
+                </p>
+                </article>
+        
+                <article class="weather__forecast__item">
+                <img
+                    src="images/clear-sky.png"
+                    alt="clear-sky"
+                    class="weather__forecast__icon"
+                />
+                <h3 class="weather__forecast__day">Day</h3>
+                <p class="weather_forecast__temperature">
+                    <span class="value">+25</span> &deg;C
+                </p>
+                </article>
+        
+                <article class="weather__forecast__item">
+                <img
+                    src="images/clear-sky.png"
+                    alt="clear-sky"
+                    class="weather__forecast__icon"
+                />
+                <h3 class="weather__forecast__day">Day</h3>
+                <p class="weather_forecast__temperature">
+                    <span class="value">+25</span> &deg;C
+                </p>
+                </article>
+        
+                <article class="weather__forecast__item">
+                <img
+                    src="images/clear-sky.png"
+                    alt="clear-sky"
+                    class="weather__forecast__icon"
+                />
+                <h3 class="weather__forecast__day">Day</h3>
+                <p class="weather_forecast__temperature">
+                    <span class="value">+25</span> &deg;C
+                </p>
+                </article>
             </div>
-        </div> <!--end .row-->
-
-        <!--end container-->
+        </div>
     </main>
     <footer>
         <!--Get social media links from 1st project-->
