@@ -147,3 +147,58 @@ searchInput.addEventListener("input", async () => {
             }
     });
 };
+
+
+// update forecast weather details
+let updateForecast = (forecast) => {
+    forecastBlock.innerHTML = "";
+    forecast.forEach((day) => {
+        let iconUrl = "http://openweathermap.org/img/wn/" + day.weather[0].icon + "@2x.png";
+        let dayName = dayOfWeek(day.dt * 1000);
+        let temperature =
+            day.main.temp > 0
+            ? "+" + Math.round(day.main.temp) : Math.round(day.main.temp);
+            let forecatItem = `
+                <article class="weather__forecast__item">
+                    <img src="${iconUrl}" alt="${day.weather[0].description}" class="weather__forecast__icon">
+                    <h3 class="weather__forecast__day">${dayName}</h3>
+                    <p class="weather__forecast__temperature"><span class="value">${temperature}</span> &deg;C</p>
+                </article>
+            `;
+            forecastBlock.insertAdjacentHTML("beforeend", forecatItem);
+        });
+    };
+
+    // get day info
+let dayOfWeek = (dt = new Date().getTime()) => {
+    return new Date(dt).toLocaleDateString("en-EN", { weekday: "long" });
+};
+
+  // get calender info
+let calenderInfo = () => {
+    return new Date().toLocaleDateString("en-EN", { calendar: "long" });
+};
+
+    // get wind info
+let getWindInfo = (data) => {
+    let windDirection;
+    let degree = data.wind.deg;
+
+    if (degree > 45 && degree <= 135) {
+        windDirection = "East";
+    } else if (degree > 135 && degree <= 225) {
+        windDirection = "South";
+    } else if (degree > 225 && degree <= 315) {
+        windDirection = "West";
+    } else {
+        windDirection = "North";
+    }
+    return windDirection + ", " + data.wind.speed;
+};
+
+    //Set initial city to London
+let initialState = () => {
+    weatherForCity("London").then(() => (document.body.style.filter = "blur(0)"));
+};
+
+initialState();
