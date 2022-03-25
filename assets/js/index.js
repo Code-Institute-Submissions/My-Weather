@@ -8,73 +8,69 @@ const locationPressureElement = document.querySelector(".location_pressure p");
 const locationTempMin = document.querySelector(".location_temp-min");
 const locationTempMax = document.querySelector(".location_temp-max");
 
-// App data
-const weather = {};
+// API variable
+let weatherAPIKey = "4616b16851daa77e0e064e1b87acd6da";
+let current_weather_API_URL = "https://api.openweathermap.org/data/2.5/weather?units=metric&appid=" +weatherAPIKey;
 
-weather.temperature = {
-    unit: "celsius",
+let forecast_API_URL = "https://api.openweathermap.org/data/2.5/forecast?units=metric&appid=" +weatherAPIKey;
+
+// array for images
+let weatherImages = [
+    {
+        url: "images/clear-sky.png",
+        ids: [800],
+    },
+    {
+        url: "images/broken-clouds.png",
+        ids: [803, 804],
+    },
+    {
+        url: "images/few-clouds.png",
+        ids: [801],
+    },
+    {
+        url: "images/mist.png",
+        ids: [701, 711, 721, 731, 741, 751, 761, 762, 771, 781],
+    },
+    {
+        url: "images/rain.png",
+        ids: [500, 501, 502, 503, 504],
+    },
+    {
+        url: "images/scattered-clouds.png",
+        ids: [802],
+    },
+    {
+        url: "images/shower-rain.png",
+        ids: [520, 521, 522, 531, 300, 301, 302, 310, 311, 312, 313, 314, 321],
+    },
+    {
+        url: "images/snow.png",
+        ids: [511, 600, 601, 602, 611, 612, 613, 615, 616, 620, 621, 622],
+    },
+    {
+        url: "images/thunderstorm.png",
+        ids: [200, 201, 202, 210, 211, 212, 221, 230, 231, 232],
+    },
+];
+
+//  API Connection for weathet today seaction
+let getWeatherByCityName = async (cityString) => {
+    let city;
+    if (cityString.includes(",")) {
+        city =
+        cityString.substring(0, cityString.indexOf(",")) +
+        cityString.substring(cityString.lastIndexOf(","));
+    } else {
+        city = cityString;
+    }
+    let endpoint = current_weather_API_URL + "&q=" + city;
+    let response = await fetch(endpoint);
+    if (response.status !== 200) {
+        alert("No known city");
+        return;
+    }
+    let weather = await response.json();
+    return weather;
 };
 
-// APP CONSTS AND VARS
-const KELVIN = 273;
-// API KEY
-const key = "82005d27a116c2880c8f0fcb866998a0";
-
-// CHECK IF BROWSER SUPPORTS GEOLOCATION
-if ("geolocation" in navigator) {
-    navigator.geolocation.getCurrentPosition(setPosition, showError);
-} else {
-    notificationElement.style.display = "block";
-    notificationElement.innerHTML = "<p>Browser doesn't Support Geolocation</p>";
-}
-
-// SET USER'S POSITION
-function setPosition(position) {
-    let latitude = position.coords.latitude;
-    let longitude = position.coords.longitude;
-
-    getWeather(latitude, longitude);
-}
-
-// SHOW ERROR WHEN THERE IS AN ISSUE WITH GEOLOCATION SERVICE
-function showError(error) {
-    notificationElement.style.display = "block";
-    notificationElement.innerHTML = `<p> ${error.message} </p>`;
-}
-
-// GET WEATHER FROM API PROVIDER
-function getWeather(latitude, longitude) {
-    //let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
-    let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
-    //https://api.openweathermap.org/data/2.5/weather?q=london&appid=4616b16851daa77e0e064e1b87acd6da&units=metric use this link to look at json
-
-    fetch(api)
-        .then(function (response) {
-            let data = response.json();
-            return data;
-        })
-        .then(function (data) {
-            weather.temperature.value = Math.floor(data.main.temp - KELVIN);
-            weather.description = data.weather[0].description;
-            weather.iconId = data.weather[0].icon;
-            weather.city = data.name;
-            weather.country = data.sys.country;
-            weather.getPressure = data.main.pressure;
-            weather.getMinTemp = Math.floor(data.main.temp_min - KELVIN);
-            weather.getMaxTemp = Math.floor(data.main.temp_max - KELVIN);
-        })
-        .then(function () {
-            displayWeather();
-        });
-}
-
-// DISPLAY WEATHER TO UI
-function displayWeather() {
-    iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
-    tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
-    descElement.innerHTML = weather.description;
-    locationElement.innerHTML = `${weather.city}, ${weather.country}`;
-    locationPressureElement.innerHTML = `${weather.getPressure}<span> hPa</span>`;
-    locationTempMin.innerHTML = `${weather.getMinTemp}<span> Min Wind</span>`;
-    locationTempMax.innerHTML = `${weather.getMaxTemp}<span> Max Wind</span>`;
-};
