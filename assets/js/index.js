@@ -1,12 +1,15 @@
 // SELECT ELEMENTS
-const iconElement = document.querySelector(".weather-icon");
-const tempElement = document.querySelector(".temperature-value p");
-const descElement = document.querySelector(".temperature-description p");
-const locationElement = document.querySelector(".location p");
-const notificationElement = document.querySelector(".notification");
-const locationPressureElement = document.querySelector(".location_pressure p");
-const locationTempMin = document.querySelector(".location_temp-min");
-const locationTempMax = document.querySelector(".location_temp-max");
+const searchInput = document.querySelector(".weatherSearch");
+const city = document.querySelector(".weatherCityName");
+const day = document.querySelector(".weatherCurrentDay");
+const calendar = document.querySelector(".weatherDate");
+const humidity = document.querySelector(".currentWeatherHumidity");
+const wind = document.querySelector(".wind_value");
+const pressure = document.querySelector(".pressure_value");
+const image = document.querySelector(".weather_image");
+const temperaature = document.querySelector(".temperature-value");
+const forecastFiveDay = document.querySelector(".weather_forecast");
+const suggestions = document.querySelector("#suggestions");
 
 // API variable
 let weatherAPIKey = "4616b16851daa77e0e064e1b87acd6da";
@@ -74,3 +77,73 @@ let getWeatherByCityName = async (cityString) => {
     return weather;
 };
 
+
+//  API Connection for forecast seaction
+let getForecastByCityID = async (id) => {
+    let endpoint = forecast_API_URL + "&id=" + id;
+    let result = await fetch(endpoint);
+    let forecast = await result.json();
+    let forecastList = forecast.list;
+    let daily = [];
+
+forecastList.forEach((day) => {
+    let date = new Date(day.dt_txt.replace(" ", "T"));
+    let hours = date.getHours();
+        if (hours === 12) {
+            daily.push(day);
+        }
+        }); //close for
+    return daily;
+};
+
+let weatherForCity = async (city) => {
+    let weather = await getWeatherByCityName(city);
+    if (!weather) {
+        return;
+    }
+    let cityID = weather.id;
+    updateCurrentWeather(weather);
+    let forecast = await getForecastByCityID(cityID);
+    updateForecast(forecast);
+};
+  //  set city weather info
+    searchInput.addEventListener("keydown", async (e) => {
+    if (e.keyCode === 13) {
+        weatherForCity(searchInput.value);
+    }
+    });
+
+  // API Connection for search Imput
+searchInput.addEventListener("input", async () => {
+    let endpoint = cityBaseEndpoint + searchInput.value;
+    let result = await (await fetch(endpoint)).json();
+    suggestions.innerHTML = "";
+    let cities = result._embedded["city:search-results"];
+    let length = cities.length > 5 ? 5 : cities.length;
+    for (let i = 0; i < length; i++) {
+        let option = document.createElement("option");
+        option.value = cities[i].matching_full_name;
+        suggestions.appendChild(option);
+    }
+});
+
+  // update weather details
+    let updateCurrentWeather = (data) => {
+        city.textContent = data.name + ", " + data.sys.country;
+        day.textContent = dayOfWeek();
+        calendar.textContent = calenderInfo();
+        humidity.textContent = data.main.humidity;
+        pressure.textContent = data.main.pressure;
+        wind.textContent = windInfo(data);
+
+        temperaature.textContent = data.main.temp > 0
+        ? "+" + Math.round(data.main.temp)
+        : Math.round(data.main.temp);
+
+        let imgID = data.weather[0].id;
+        weatherImages.forEach((obj) => {
+            if (obj.ids.includes(imgID)) {
+                image.src = obj.url;
+            }
+    });
+};
