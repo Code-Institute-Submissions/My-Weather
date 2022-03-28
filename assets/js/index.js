@@ -9,12 +9,10 @@ const pressure = document.querySelector(".pressure_value");
 const image = document.querySelector(".weather_image");
 const temperaature = document.querySelector(".temperature-value");
 const forecastFiveDay = document.querySelector(".weather_forecast");
-const suggestions = document.querySelector("#suggestions");
 
 // API variable
 let weatherAPIKey = "4616b16851daa77e0e064e1b87acd6da";
 let current_weather_API_URL = "https://api.openweathermap.org/data/2.5/weather?units=metric&appid=" +weatherAPIKey;
-let cityBaseEndpoint = "https://api.teleport.org/api/cities/?search=";
 let forecast_API_URL = "https://api.openweathermap.org/data/2.5/forecast?units=metric&appid=" +weatherAPIKey;
 
 // array for images
@@ -118,13 +116,11 @@ let weatherForCity = async (city) => {
 searchInput.addEventListener("input", async () => {
     let endpoint = cityBaseEndpoint + searchInput.value;
     let result = await (await fetch(endpoint)).json();
-    suggestions.innerHTML = "";
     let cities = result._embedded["city:search-results"];
     let length = cities.length > 5 ? 5 : cities.length;
     for (let i = 0; i < length; i++) {
         let option = document.createElement("option");
         option.value = cities[i].matching_full_name;
-        suggestions.appendChild(option);
     }
 });
 
