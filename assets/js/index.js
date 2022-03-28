@@ -70,7 +70,8 @@ let getWeatherByCityName = async (cityString) => { //move to a func
     let endpoint = current_weather_API_URL + "&q=" + city;
     let response = await fetch(endpoint);
     if (response.status !== 200) {
-        alert("No known city"); //remove alert
+        //alert("No known city"); //remove alert
+        console.log("No known city");
         return;
     }
     let weather = await response.json();
@@ -137,7 +138,7 @@ searchInput.addEventListener("input", async () => {
         wind.textContent = getWindInfo(data);
 
         temperaature.textContent = data.main.temp > 0
-        ? "+" + Math.round(data.main.temp)
+        ? Math.round(data.main.temp)
         : Math.round(data.main.temp);
 
         let imgID = data.weather[0].id;
@@ -157,7 +158,7 @@ let updateForecast = (forecast) => {
         let dayName = dayOfWeek(day.dt * 1000);
         let temperature =
             day.main.temp > 0
-            ? "+" + Math.round(day.main.temp) : Math.round(day.main.temp);
+            ? Math.round(day.main.temp) : Math.round(day.main.temp);
             let forecatItem = `
                 <article class="weather__forecast__item">
                     <img src="${iconUrl}" alt="${day.weather[0].description}" class="weather__forecast__icon">
@@ -202,3 +203,11 @@ let initialState = () => {
 };
 
 initialState();
+
+/*  jQuery input prevention in html input  */
+function preventNumberInput(e){
+    var keyCode = (e.keyCode ? e.keyCode : e.which);
+    if(keyCode > 47 && keyCode < 58 || keyCode > 95 && keyCode < 107){
+        e.preventDefault();
+    }
+}

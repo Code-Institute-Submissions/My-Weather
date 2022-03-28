@@ -15,6 +15,9 @@
                 list="suggestions"
                 class="weatherSearch"
                 placeholder="Enter a city"
+                onkeydown="preventNumberInput(event)"
+                onkeyup="preventNumberInput(event)"
+                required
             />
             <div class="weather__today">
                 <div class="weather__details">
@@ -39,7 +42,7 @@
                     class="weather_image"
                 />
                 <div class="weather_temperature">
-                    <span class="temperature-value">+25</span> &deg;C
+                    <span class="temperature-value">0</span> &deg;C
                 </div>
             </div>
 
@@ -52,7 +55,7 @@
                 />
                 <h3 class="weather__forecast__day">Day</h3>
                 <p class="weather_forecast__temperature">
-                    <span class="value">+25</span> &deg;C
+                    <span class="value">17</span> &deg;C
                 </p>
                 </article>
         
@@ -64,7 +67,7 @@
                 />
                 <h3 class="weather__forecast__day">Day</h3>
                 <p class="weather_forecast__temperature">
-                    <span class="value">+25</span> &deg;C
+                    <span class="value">34</span> &deg;C
                 </p>
                 </article>
         
@@ -76,7 +79,7 @@
                 />
                 <h3 class="weather__forecast__day">Day</h3>
                 <p class="weather_forecast__temperature">
-                    <span class="value">+25</span> &deg;C
+                    <span class="value">5</span> &deg;C
                 </p>
                 </article>
         
@@ -88,7 +91,7 @@
                 />
                 <h3 class="weather__forecast__day">Day</h3>
                 <p class="weather_forecast__temperature">
-                    <span class="value">+25</span> &deg;C
+                    <span class="value">12</span> &deg;C
                 </p>
                 </article>
         
@@ -100,7 +103,7 @@
                 />
                 <h3 class="weather__forecast__day">Day</h3>
                 <p class="weather_forecast__temperature">
-                    <span class="value">+25</span> &deg;C
+                    <span class="value">15</span> &deg;C
                 </p>
                 </article>
             </div>
