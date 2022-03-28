@@ -58,7 +58,7 @@ let weatherImages = [
 ];
 
 //  API Connection for weathet today seaction
-let getWeatherByCityName = async (cityString) => {
+let getWeatherByCityName = async (cityString) => { //move to a func
     let city;
     if (cityString.includes(",")) {
         city =
@@ -70,7 +70,7 @@ let getWeatherByCityName = async (cityString) => {
     let endpoint = current_weather_API_URL + "&q=" + city;
     let response = await fetch(endpoint);
     if (response.status !== 200) {
-        alert("No known city");
+        alert("No known city"); //remove alert
         return;
     }
     let weather = await response.json();
@@ -78,7 +78,7 @@ let getWeatherByCityName = async (cityString) => {
 };
 
 
-//  API Connection for forecast seaction
+//  API Connection for forecast section
 let getForecastByCityID = async (id) => {
     let endpoint = forecast_API_URL + "&id=" + id;
     let result = await fetch(endpoint);
@@ -113,7 +113,7 @@ let weatherForCity = async (city) => {
     }
     });
 
-  // API Connection for search Imput
+  // API Connection for search Input
 searchInput.addEventListener("input", async () => {
     let endpoint = cityBaseEndpoint + searchInput.value;
     let result = await (await fetch(endpoint)).json();
@@ -134,7 +134,7 @@ searchInput.addEventListener("input", async () => {
         calendar.textContent = calenderInfo();
         humidity.textContent = data.main.humidity;
         pressure.textContent = data.main.pressure;
-        wind.textContent = windInfo(data);
+        wind.textContent = getWindInfo(data);
 
         temperaature.textContent = data.main.temp > 0
         ? "+" + Math.round(data.main.temp)
@@ -151,7 +151,7 @@ searchInput.addEventListener("input", async () => {
 
 // update forecast weather details
 let updateForecast = (forecast) => {
-    forecastBlock.innerHTML = "";
+    forecastFiveDay.innerHTML = "";
     forecast.forEach((day) => {
         let iconUrl = "http://openweathermap.org/img/wn/" + day.weather[0].icon + "@2x.png";
         let dayName = dayOfWeek(day.dt * 1000);
@@ -165,7 +165,7 @@ let updateForecast = (forecast) => {
                     <p class="weather__forecast__temperature"><span class="value">${temperature}</span> &deg;C</p>
                 </article>
             `;
-            forecastBlock.insertAdjacentHTML("beforeend", forecatItem);
+            forecastFiveDay.insertAdjacentHTML("beforeend", forecatItem);
         });
     };
 
