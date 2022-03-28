@@ -14,7 +14,7 @@ const suggestions = document.querySelector("#suggestions");
 // API variable
 let weatherAPIKey = "4616b16851daa77e0e064e1b87acd6da";
 let current_weather_API_URL = "https://api.openweathermap.org/data/2.5/weather?units=metric&appid=" +weatherAPIKey;
-
+let cityBaseEndpoint = "https://api.teleport.org/api/cities/?search=";
 let forecast_API_URL = "https://api.openweathermap.org/data/2.5/forecast?units=metric&appid=" +weatherAPIKey;
 
 // array for images
@@ -169,7 +169,7 @@ let updateForecast = (forecast) => {
         });
     };
 
-    // get day info
+// get day info
 let dayOfWeek = (dt = new Date().getTime()) => {
     return new Date(dt).toLocaleDateString("en-EN", { weekday: "long" });
 };
@@ -179,7 +179,7 @@ let calenderInfo = () => {
     return new Date().toLocaleDateString("en-EN", { calendar: "long" });
 };
 
-    // get wind info
+// get wind info
 let getWindInfo = (data) => {
     let windDirection;
     let degree = data.wind.deg;

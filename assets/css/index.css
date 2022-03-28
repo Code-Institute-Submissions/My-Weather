@@ -48,12 +48,12 @@ body {
   justify-content: space-between;
 }
 
-.weather__image {
+.weather_image {
   width: 30vmin;
   align-self: center;
 }
 
-.weaher__city {
+.weather__city {
   font-size: 36px;
   font-weight: 500;
   margin: 20px 0;
@@ -78,15 +78,20 @@ body {
 
 
 .weather__temperature {
-  font-size: 50px;
+  font-size: 150px;
 }
 
-.weather__forecast {
+.weather_forecast {
   width: 100%;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 1.5em;
   justify-content: space-between;
+}
+
+.temperature-value{
+  font-size: 200%;
 }
 
 .weather__forecast__icon {
@@ -102,4 +107,36 @@ body {
   min-width: 150px;
   width: calc(20% - 20px);
   flex-grow: 1;
+}
+
+/* Social Links */
+footer {
+  height: 150px;
+  position: relative;
+  bottom: 0px;
+  padding-top: 20px;
+  background-image: radial-gradient(
+    circle,
+    #1c7fc2 0%,
+    #009cdc 28%,
+    #0d9ade 32%,
+    #011844 100%
+  );
+}
+
+.social-links {
+  text-align: center;
+}
+
+.social-links > li {
+  display: inline; /*Displays the links to */
+}
+
+.social-links i {
+  font-size: 160%;
+  margin: 1%;
+  padding: 10%;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  color: #3a3a3a;
 }
