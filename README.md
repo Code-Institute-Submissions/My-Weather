@@ -17,14 +17,35 @@
 * [References](#references)
 
 ## General Introduction
-With the current situtation with people working from home, many are unable to detatch from work stresses and their mental health takes affect. The idea behind this application is to bring awareness to the benefits of meditation, and provide the user with some beginner exercises to to introduce them to meditation. There is also a calender for the user to come join in person for a group meditation class. 
+
 
 ## User Experience
-The target audience of this project is anyone who has an interest in Meditation or is looking to give Meditation a try. 
 
-The target audience of Meditate of this project is anyone who has an interest in Meditation. The aim of Meditate is to bring interest to those who don't know a lot about meditation. For those who already have a good understanding of how we are affecting our oceans they should still be able to learn a little and understand what we are aiming to achieve with spreading knowledge.
+### Target Audience
+* General population
+* Think of another one
 
-The target audience of the application is for anyone who would like to query the weather. The aim of the application is to create a user friendly 
+### User Stories
+* New user:
+	i. I am a new user and I would like to check the weather.
+	ii. I am a new user and I would like an application with a easy navigable user experience.
+
+* Existing user:
+	i.
+	ii.
+
+* Site developer:
+	i. I want to make the website interactive and a user friendly UX.
+	ii. I want to make the application easy to for users to enjoy.
+
+### Strategy 
+The strategy is to create an interactive weather application that displays the weather data in an clear and concise way. To create an application that provides
+a consistency in styling across the application. To create code that allows for ease when implementing future updates and features.
+
+### Project Goals
+* To provide an interactive application.
+* Allows for users to query weather forecast.
+* To provide an application that has good UX design.
 
 ### Future Works
 Futures works will include:
@@ -46,7 +67,7 @@ The justification for my choice the colours below are inline with the overall de
 
 Wireframe Diagrams:
 Before beginning the project I created 3 wireframe diagrams using the wireframe software Balsamiq. Below are links to the wireframe diagrams that the were used in development.  
-* [Desktop](https://github.com/Gavin-1001/Gavin-1001.github.io/blob/main/assets/images/wireframes/wireframe_3.bmpr)
+* [Desktop](https://github.com/Gavin-1001/My-Weather/blob/main/Project_2_Wireframes/wireframe2.bmpr)
 * [Mobile](https://github.com/Gavin-1001/Gavin-1001.github.io/blob/main/assets/images/wireframes/wireframe3_mobile.bmpr)
 
 Fonts:
@@ -61,8 +82,9 @@ The fonts that I chose are from the Google Fonts library. I chose to use [Google
 * [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started)
 * [JavaScript]
 * [Bootstrap 5](https://getbootstrap.com/)
+### Other Technologies 
 * [OpenWeatherAPI](https://openweathermap.org/api)
-* 
+* [Google Font](https://fonts.google.com/)
 <!--	
 ## Setup
 To run this project, install it locally using npm:
@@ -75,11 +97,7 @@ $ git clone https://github.com/Gavin-1001/Gavin-1001.github.io.git
 -->
 
 ## Issues
-There are two issues in this project:
-
-* When the background color was applied to the calender section, it shows the outline of the divs that hold the divs of the days of the week. Unfortunately I have be unable to fix this issue, so far, but plan on adding bootstrap to the calender to correct this background color issue. - FIXED
-
-* Another issue that I encountered was with the images when reducing the sizes to make it compatible on mobile devices. In the near future I plan on moving the images above or below the exercise block of text. - FIXED
+There were no major issues in the development of this application.
 
 ## Testing
 * For the testing portion of this project, I used W3C HTML Validation Service to validate my HTML, and again I used W3C CSS Validation to validate my CSS. Below I have linked the screenshots of my error free [HTML](https://github.com/Gavin-1001/Gavin-1001.github.io/blob/main/assets/images/test_screenshots/HTML_Validation.png) and [CSS](https://github.com/Gavin-1001/Gavin-1001.github.io/blob/main/assets/images/test_screenshots/CSS_Validation.png). 
