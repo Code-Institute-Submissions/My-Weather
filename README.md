@@ -24,6 +24,8 @@ The target audience of this project is anyone who has an interest in Meditation 
 
 The target audience of Meditate of this project is anyone who has an interest in Meditation. The aim of Meditate is to bring interest to those who don't know a lot about meditation. For those who already have a good understanding of how we are affecting our oceans they should still be able to learn a little and understand what we are aiming to achieve with spreading knowledge.
 
+The target audience of the application is for anyone who would like to query the weather. The aim of the application is to create a user friendly 
+
 ### Future Works
 Futures works will include:
 * Implementing a live weather map to visually view weather based on location.
@@ -60,6 +62,7 @@ The fonts that I chose are from the Google Fonts library. I chose to use [Google
 * [JavaScript]
 * [Bootstrap 5](https://getbootstrap.com/)
 * [OpenWeatherAPI](https://openweathermap.org/api)
+* 
 <!--	
 ## Setup
 To run this project, install it locally using npm:
