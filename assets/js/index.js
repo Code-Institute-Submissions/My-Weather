@@ -15,7 +15,7 @@ let weatherAPIKey = "4616b16851daa77e0e064e1b87acd6da";
 let current_weather_API_URL = "https://api.openweathermap.org/data/2.5/weather?units=metric&appid=" +weatherAPIKey;
 let forecast_API_URL = "https://api.openweathermap.org/data/2.5/forecast?units=metric&appid=" +weatherAPIKey;
 
-// array for images
+// array for image to correspond to json id, if id is in range of array, display image
 let weatherImages = [
     {
         url: "assets/images/clear-sky.png",
