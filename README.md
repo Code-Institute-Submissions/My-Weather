@@ -2,15 +2,23 @@
 ## Table of contents
 * [General Introduction](#general-introduction)
 * [User Experience](#user-experience)
-* [Design Brief](#design-brief)
+	* [Target Audience](#Target-Audience)
+	* [User Stories](#User-Stories)
+	* [Strategy](#Strategy)
+	* [Project Goals](#Project-Goals)
+	* [Future Works](#Future-Works)
 	* [Images](#Images)
 	* [Colours](#Colours)
 	* [Wireframe Diagrams](#Wireframe-Diagrams)
 	* [Fonts](#font)
 * [Technologies](#technologies)
+	* [Other Technologies](#Other-Technologies)
 * [Issues](#issues)
 * [Testing](#testing)
 * [Deployment](#deployment)
+*	* [Local Deployment](#Local-Deployment)
+*	* [Remote Deploment](#Remote-Deployment)
+*	* [Cloning/Forking](#Cloning-Forking)
 * [References](#references)
 
 ## General Introduction:
@@ -51,6 +59,8 @@ Futures works will include:
 * Implement a "Find my Location" button using Geolocaton.
 * Implement a card display to allow for the temperature and other variables to be converted to imperial units. 
 
+### Images:
+* There are both icons and images that are used throughtout the application. The icons are from [Font Awesome](https://fontawesome.com/). All images are from the [OpenWeather API](https://openweathermap.org/weather-conditions). 
 
 ### Colours:
 The justification for my choice the colours below are inline with the overall design flow. I chose to use a circular radial-gradient css function as it would allow me to use multiple shades of blue and would create a smooth transition from one colour to the next.
@@ -68,11 +78,6 @@ The fonts that are used in the project are from the Google Fonts library. Initia
 
 * All heading tags - [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans?query=Noto+Sans), sans-serif. 
 * All other tags - [Red Hat Mono](https://fonts.google.com/specimen/Red+Hat+Mono?query=Red+Hat), sans-serif.
-
-
-### Images:
-* There are both icons and images that are used throughtout the application. The icons are from [Font Awesome](https://fontawesome.com/). All images are from the [OpenWeather API](https://openweathermap.org/weather-conditions). 
-
 	
 ## Technologies:
 * [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
@@ -80,7 +85,7 @@ The fonts that are used in the project are from the Google Fonts library. Initia
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [Bootstrap 5](https://getbootstrap.com/)
 * [jQuery](https://jquery.com/)
-### Other Technologies 
+### Other Technologies:
 * [OpenWeatherAPI](https://openweathermap.org/api)
 * [Google Font](https://fonts.google.com/)
 <!--	
