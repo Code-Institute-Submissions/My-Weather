@@ -1,7 +1,4 @@
-# My-Weather
-# Code Institute
-# JavaScript Essentials Portfolio 2
-
+# My-Weather - JavaScript Essentials Portfolio 2
 ## Table of contents
 * [General Introduction](#general-introduction)
 * [User Experience](#user-experience)
@@ -70,7 +67,7 @@ Before beginning the project I created 3 wireframe diagrams using the wireframe 
 The fonts that are used in the project are from the Google Fonts library. Initially, I chose to use Open Sans and Quicksand, but after viewing the font in development I changed my mind and decided to use Noto Sans and Red Hat Mono. I have added san-serif as a backup in case there is an error with Google Font and the fonts cannot be loaded in.  
 
 * All heading tags - [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans?query=Noto+Sans), sans-serif. 
-* All p tags - [Red Hat Mono](https://fonts.google.com/specimen/Red+Hat+Mono?query=Red+Hat), sans-serif.
+* All other tags - [Red Hat Mono](https://fonts.google.com/specimen/Red+Hat+Mono?query=Red+Hat), sans-serif.
 
 
 ### Images:
@@ -98,7 +95,7 @@ $ git clone https://github.com/Gavin-1001/Gavin-1001.github.io.git
 -->
 
 ## Issues:
-There were no major issues in the development of this application.
+* There is one issue that I am currently unable to resolve. In the index.html file I have the current weather components along the left hand side of the screen. The three components I have humidity, pressure and wind speed/direction. I am currently unable to display a label beside the humidity value, I have the label in the html code but it is not displaying on the screen. I plan to have this issue resolved in the near future. 
 
 ## Testing:
 * For the testing portion of this project, I used W3C HTML Validation Service to validate my HTML, and again I used W3C CSS Validation to validate my CSS. Below I have linked the screenshots of my error free [HTML](https://github.com/Gavin-1001/My-Weather/blob/main/assets/images/testing_screenshot/validator%20images/HTML_Validation.png) and [CSS](https://github.com/Gavin-1001/My-Weather/blob/main/assets/images/testing_screenshot/validator%20images/CSS_Validation.png). 
