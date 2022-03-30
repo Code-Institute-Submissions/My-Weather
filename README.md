@@ -31,11 +31,12 @@
 	ii. I am a new user and I would like an application with a easy navigable user experience.
 
 * Existing user:
-	i.
-	ii.
+	i. I am an existing user and I would like to easily check the weather
+	ii.  I am an existing user and I would like a UI that is easy navigable.
+	
 
 * Site developer:
-	i. I want to make the website interactive and a user friendly UX.
+	i. I want to make the website interactive and a user friendly UI.
 	ii. I want to make the application easy to for users to enjoy.
 
 ### Strategy 
@@ -49,20 +50,18 @@ a consistency in styling across the application. To create code that allows for 
 
 ### Future Works
 Futures works will include:
-* Implementing a live weather map to visually view weather based on location.
-* Implement a more detailed weather description based on day of week
+* Implementing a live weather map to visually view weather based on location. 
+* Implement a more detailed weather description based on day of week.
+* Implement a "Find my Location" button using Geolocaton. 
+
 
 ## Design Brief
 The main aim of Meditate is create a webpage that will encourage users to be more concious of their mental health in the form of Meditation/Mindfulness. Another aim of the site is to provide simplistic, quick exercises for users to preform at home. For the basic design principle of the site was to keep it simplistic, easy to read information. The flow of the web site follows that trend of simplicity and calmness with it's colours and fonts. Below I have included my reasoning for choosing my font and colours for the project. 
 
-Images: 
-* All [images](https://github.com/Gavin-1001/Gavin-1001.github.io/tree/main/assets/images/wireframes) that I used in the development of this project are from [Getty Images](https://www.gettyimages.ie/). This project is based off of the design of both wireframe 2 and wireframe 3. 
-
 
 Colours:
-The justification for my choice the colours below are inline with the overall design flow. I chose to stick to Blue / off Blue colours as these colors having a calming, and are proven to decrease the heart rate, lower blood pressure and reduce anxiety levels. I have included the colours below along with they're corresponding hex values.
-* Background colour - #e9fcff
-* Background colour of calender - #8c918f
+The justification for my choice the colours below are inline with the overall design flow. I chose to use a circular radial-gradient css function as it would allow me to use multiple shades of blue and would create a smooth transition from one colour to the next.
+* Background colour - #1c7fc2, #009cdc, #0d9ade, #011844. 
 
 
 Wireframe Diagrams:
@@ -70,11 +69,12 @@ Before beginning the project I created 3 wireframe diagrams using the wireframe 
 * [Desktop](https://github.com/Gavin-1001/My-Weather/blob/main/Project_2_Wireframes/wireframe2.bmpr)
 * [Mobile](https://github.com/Gavin-1001/Gavin-1001.github.io/blob/main/assets/images/wireframes/wireframe3_mobile.bmpr)
 
-Fonts:
-The fonts that I chose are from the Google Fonts library. I chose to use [Google Fonts](https://fonts.google.com/) as there is a better selection of fonts/ font styles compared to other libraries. Below I have included the fonts that were used in the project.
 
-* All heading tags - Mochiy Pop P One, sans-serif.
-* All p tags - Quicksand, sans-serif.
+Fonts:
+The fonts that are used in the project are from the Google Fonts library. Initially, I chose to use Open Sans and Quicksand, but after viewing the font in development I changed my mind and decided to use Noto Sans and Red Hat Mono. 
+
+* All heading tags - Noto Sans sans-serif.
+* All p tags - Red Hat Mono, sans-serif.
 
 	
 ## Technologies
@@ -139,9 +139,3 @@ $ git clone https://github.com/Gavin-1001/Gavin-1001.github.io.git
 ```
 * Open the folder in your favourite IDE, and the code should be displayed. 
 
-
-## References
-* [Pexels](https://www.pexels.com/)
-* https://www.verywellmind.com/learn-how-to-meditate-3144793 
-* https://www.mindful.org/how-to-meditate/
-* All images are referenced [here](https://github.com/Gavin-1001/Gavin-1001.github.io/blob/main/assets/images/exercise_images/image_reference.txt)
