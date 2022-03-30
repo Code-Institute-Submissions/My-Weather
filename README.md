@@ -16,46 +16,43 @@
 * [Deployment](#deployment)
 * [References](#references)
 
-## General Introduction
-
+## General Introduction:
+The My-Weather application is an interactive website that allows users to input the location of a city and it will return the current weather in that city along with some weather variables such as humidity, pressure and wind speed/direction. The aim of the application as I have mentioned below is to give the user seemless experience when visiting the website and keep the front-end simple. 
 
 ## User Experience
 ### Target Audience
-* General population
-* Think of another one
+* General user
+* People of all ages
 
-### User Stories
-* New user:
-	i. I am a new user and I would like to check the weather.
-	ii. I am a new user and I would like an application with a easy navigable user experience.
+### User Stories:
+* New user: <br />
+	i. I am a new user and I would like to check the weather. <br />
+	ii. I am a new user and I would like an application with a easy navigable user experience. <br />
 
-* Existing user:
-	i. I am an existing user and I would like to easily check the weather
-	ii. I am an existing user and I would like a UI that is easy navigable.
+* Existing user: <br />
+	i. I am an existing user and I would like to easily check the weather. <br />
+	ii. I am an existing user and I would like a UI that is easy navigable. <br />
 	
 
-* Site developer:
-	i. I want to make the website interactive and a user friendly UI.
-	ii. I want to make the application easy to for users to enjoy.
+* Site developer: <br />
+	i. I want to make the website interactive and a user friendly UI. <br />
+	ii. I want to make the application easy to for users to enjoy. <br />
 
-### Strategy 
+### Strategy: 
 The strategy is to create an interactive weather application that displays the weather data in an clear and concise way. To create an application that provides
 a consistency in styling across the application. To create code that allows for ease when implementing future updates and features.
 
-### Project Goals
+### Project Goals:
 * To provide an interactive application.
 * Allows for users to query weather forecast.
 * To provide an application that has good UX design.
 
-### Future Works
+### Future Works:
 Futures works will include:
 * Implementing a live weather map to visually view weather based on location. 
 * Implement a more detailed weather description based on day of week.
-* Implement a "Find my Location" button using Geolocaton. 
-
-
-## Design Brief
-The main aim of Meditate is create a webpage that will encourage users to be more concious of their mental health in the form of Meditation/Mindfulness. Another aim of the site is to provide simplistic, quick exercises for users to preform at home. For the basic design principle of the site was to keep it simplistic, easy to read information. The flow of the web site follows that trend of simplicity and calmness with it's colours and fonts. Below I have included my reasoning for choosing my font and colours for the project. 
+* Implement a "Find my Location" button using Geolocaton.
+* Implement a card display to allow for the temperature and other variables to be converted to imperial units. 
 
 
 ### Colours:
@@ -80,7 +77,7 @@ The fonts that are used in the project are from the Google Fonts library. Initia
 * There are both icons and images that are used throughtout the application. The icons are from [Font Awesome](https://fontawesome.com/). All images are from the [OpenWeather API](https://openweathermap.org/weather-conditions). 
 
 	
-## Technologies
+## Technologies:
 * [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started)
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -100,16 +97,16 @@ $ git clone https://github.com/Gavin-1001/Gavin-1001.github.io.git
 ```
 -->
 
-## Issues
+## Issues:
 There were no major issues in the development of this application.
 
-## Testing
+## Testing:
 * For the testing portion of this project, I used W3C HTML Validation Service to validate my HTML, and again I used W3C CSS Validation to validate my CSS. Below I have linked the screenshots of my error free [HTML](https://github.com/Gavin-1001/My-Weather/blob/main/assets/images/testing_screenshot/validator%20images/HTML_Validation.png) and [CSS](https://github.com/Gavin-1001/My-Weather/blob/main/assets/images/testing_screenshot/validator%20images/CSS_Validation.png). 
 
 To test the entire application I used a Chrome extension [Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools). Lighthouse is an open-source, automated tool for improving the quality of web pages. I have attached a [screenshot](https://github.com/Gavin-1001/My-Weather/blob/main/assets/images/testing_screenshot/index_chrome_lighthouse_test_screenshot.PNG) of the automation testing report that was performed on the website.  
 
-## Deployment
-### Local Deployment
+## Deployment:
+### Local Deployment:
 * Assuming you are using Gitpod, download the gitpod extension for [Chrome](https://chrome.google.com/webstore/detail/gitpod-always-ready-to-co/dodmmooeoklaejobgleioelladacbeki) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/gitpod/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search).
 * Return to my github repository.
 * On the upper right corner of the repository there is a green "Gitpod" button, click it, this will take you to Gitpod.
@@ -117,14 +114,14 @@ To test the entire application I used a Chrome extension [Lighthouse](https://de
 * Github may ask you to authorize Gitpod. Click "Authorize gitpod-io.
 * Gitpod will now open the repository.
 
-### Remote Deployment
+### Remote Deployment:
 * Visit my Github Repository.
 * On the repository ribbon navigate to the "settings" tab.
 * On the left of the screen, navigate to the "Code and automation" section.
 * In the "Code and automation" section, click on the "Pages" button.
 
-### Cloning / Forking
-#### Cloning
+### Cloning / Forking:
+#### Cloning:
 * Navigate to the main page of the repository. 
 * Above the file display/structure of the repository on the top right, click the green "Code" dropdown.
 * To clone using HTTPS, copy the link using the clipboard icon. See [image](https://github.com/Gavin-1001/My-Weather/blob/main/assets/images/github_screenshots/cloning-repo.png) for reference on where to find the link to clone.
@@ -132,7 +129,7 @@ To test the entire application I used a Chrome extension [Lighthouse](https://de
 * Create a folder to the location where you want to store the cloned repository. 
 * In the terminal type, and press enter.
 
-#### Forking
+#### Forking:
 * You are more than welcome to contributing to the repository, I look forward to seeing your work!
 * To contribute to the project, navigate to the main page of the repository.
 * In the top right hand corner of the webpage click the "Fork" button.
