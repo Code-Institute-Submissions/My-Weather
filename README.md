@@ -21,7 +21,7 @@
 * [Deployment](#deployment)
 *	* [Local Deployment](#Local-Deployment)
 *	* [Remote Deploment](#Remote-Deployment)
-*	* [Cloning/Forking](#Cloning / Forking)
+*	* [Cloning/Forking](#Cloning/Forking)
 * [References](#references)
 
 ## General Introduction:
@@ -125,7 +125,7 @@ To test the entire application I used a Chrome extension [Lighthouse](https://de
 * On the left of the screen, navigate to the "Code and automation" section.
 * In the "Code and automation" section, click on the "Pages" button.
 
-### Cloning / Forking:
+### Cloning/Forking:
 #### Cloning:
 * Navigate to the main page of the repository. 
 * Above the file display/structure of the repository on the top right, click the green "Code" dropdown.
