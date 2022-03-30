@@ -1,19 +1,27 @@
-# My-Weather
-# Code Institute
-# JavaScript Essentials Portfolio 2
-
+# My-Weather - JavaScript Essentials Portfolio 2
 ## Table of contents
 * [General Introduction](#general-introduction)
 * [User Experience](#user-experience)
-* [Design Brief](#design-brief)
+	* [Target Audience](#Target-Audience)
+	* [User Stories](#User-Stories)
+		* [New User](#New-user)
+		* [Existing User](#Existing-user)
+		* [Site Developer](#Site-developer)
+	* [Strategy](#Strategy)
+	* [Project Goals](#Project-Goals)
+	* [Future Works](#Future-Works)
 	* [Images](#Images)
 	* [Colours](#Colours)
 	* [Wireframe Diagrams](#Wireframe-Diagrams)
 	* [Fonts](#font)
 * [Technologies](#technologies)
+	* [Other Technologies](#Other-Technologies)
 * [Issues](#issues)
 * [Testing](#testing)
 * [Deployment](#deployment)
+*	* [Local Deployment](#Local-Deployment)
+*	* [Remote Deploment](#Remote-Deployment)
+*	* [Cloning/Forking](#Cloning/Forking)
 * [References](#references)
 
 ## General Introduction:
@@ -54,6 +62,8 @@ Futures works will include:
 * Implement a "Find my Location" button using Geolocaton.
 * Implement a card display to allow for the temperature and other variables to be converted to imperial units. 
 
+### Images:
+* There are both icons and images that are used throughtout the application. The icons are from [Font Awesome](https://fontawesome.com/). All images are from the [OpenWeather API](https://openweathermap.org/weather-conditions). 
 
 ### Colours:
 The justification for my choice the colours below are inline with the overall design flow. I chose to use a circular radial-gradient css function as it would allow me to use multiple shades of blue and would create a smooth transition from one colour to the next.
@@ -70,12 +80,7 @@ Before beginning the project I created 3 wireframe diagrams using the wireframe 
 The fonts that are used in the project are from the Google Fonts library. Initially, I chose to use Open Sans and Quicksand, but after viewing the font in development I changed my mind and decided to use Noto Sans and Red Hat Mono. I have added san-serif as a backup in case there is an error with Google Font and the fonts cannot be loaded in.  
 
 * All heading tags - [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans?query=Noto+Sans), sans-serif. 
-* All p tags - [Red Hat Mono](https://fonts.google.com/specimen/Red+Hat+Mono?query=Red+Hat), sans-serif.
-
-
-### Images:
-* There are both icons and images that are used throughtout the application. The icons are from [Font Awesome](https://fontawesome.com/). All images are from the [OpenWeather API](https://openweathermap.org/weather-conditions). 
-
+* All other tags - [Red Hat Mono](https://fonts.google.com/specimen/Red+Hat+Mono?query=Red+Hat), sans-serif.
 	
 ## Technologies:
 * [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
@@ -83,7 +88,7 @@ The fonts that are used in the project are from the Google Fonts library. Initia
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [Bootstrap 5](https://getbootstrap.com/)
 * [jQuery](https://jquery.com/)
-### Other Technologies 
+### Other Technologies:
 * [OpenWeatherAPI](https://openweathermap.org/api)
 * [Google Font](https://fonts.google.com/)
 <!--	
@@ -98,7 +103,7 @@ $ git clone https://github.com/Gavin-1001/Gavin-1001.github.io.git
 -->
 
 ## Issues:
-There were no major issues in the development of this application.
+* There is one issue that I am currently unable to resolve. In the index.html file I have the current weather components along the left hand side of the screen. The three components I have humidity, pressure and wind speed/direction. I am currently unable to display a label beside the humidity value, I have the label in the html code but it is not displaying on the screen. I plan to have this issue resolved in the near future. 
 
 ## Testing:
 * For the testing portion of this project, I used W3C HTML Validation Service to validate my HTML, and again I used W3C CSS Validation to validate my CSS. Below I have linked the screenshots of my error free [HTML](https://github.com/Gavin-1001/My-Weather/blob/main/assets/images/testing_screenshot/validator%20images/HTML_Validation.png) and [CSS](https://github.com/Gavin-1001/My-Weather/blob/main/assets/images/testing_screenshot/validator%20images/CSS_Validation.png). 
@@ -120,7 +125,7 @@ To test the entire application I used a Chrome extension [Lighthouse](https://de
 * On the left of the screen, navigate to the "Code and automation" section.
 * In the "Code and automation" section, click on the "Pages" button.
 
-### Cloning / Forking:
+### Cloning/Forking:
 #### Cloning:
 * Navigate to the main page of the repository. 
 * Above the file display/structure of the repository on the top right, click the green "Code" dropdown.
