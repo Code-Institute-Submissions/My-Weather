@@ -21,7 +21,7 @@
 * [Deployment](#deployment)
 *	* [Local Deployment](#Local-Deployment)
 *	* [Remote Deploment](#Remote-Deployment)
-*	* [Cloning/Forking](#Cloning-Forking)
+*	* [Cloning/Forking](#Cloning / Forking)
 * [References](#references)
 
 ## General Introduction:
