@@ -151,4 +151,5 @@ $ git clone https://github.com/Gavin-1001/Gavin-1001.github.io.git
 
 ## References:
 * OpenWeather API [documentation](https://openweathermap.org/api)
+* Mozilla [Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
