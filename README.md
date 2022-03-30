@@ -105,7 +105,9 @@ $ git clone https://github.com/Gavin-1001/Gavin-1001.github.io.git
 There were no major issues in the development of this application.
 
 ## Testing
-* For the testing portion of this project, I used W3C HTML Validation Service to validate my HTML, and again I used W3C CSS Validation to validate my CSS. Below I have linked the screenshots of my error free [HTML](https://github.com/Gavin-1001/Gavin-1001.github.io/blob/main/assets/images/test_screenshots/HTML_Validation.png) and [CSS](https://github.com/Gavin-1001/Gavin-1001.github.io/blob/main/assets/images/test_screenshots/CSS_Validation.png). 
+* For the testing portion of this project, I used W3C HTML Validation Service to validate my HTML, and again I used W3C CSS Validation to validate my CSS. Below I have linked the screenshots of my error free [HTML](https://github.com/Gavin-1001/My-Weather/blob/main/assets/images/validator%20images/HTML_Validation.png) and [CSS](https://github.com/Gavin-1001/My-Weather/blob/main/assets/images/validator%20images/CSS_Validation.png). 
+
+To test the entire application I used a Chrome extension [Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools). Lighthouse is an open-source, automated tool for improving the quality of web pages. I have attached a [screenshot]() of the automation testing report that was performed on the website.  
 
 ## Deployment
 
