@@ -20,7 +20,6 @@
 
 
 ## User Experience
-
 ### Target Audience
 * General population
 * Think of another one
@@ -59,32 +58,32 @@ Futures works will include:
 The main aim of Meditate is create a webpage that will encourage users to be more concious of their mental health in the form of Meditation/Mindfulness. Another aim of the site is to provide simplistic, quick exercises for users to preform at home. For the basic design principle of the site was to keep it simplistic, easy to read information. The flow of the web site follows that trend of simplicity and calmness with it's colours and fonts. Below I have included my reasoning for choosing my font and colours for the project. 
 
 
-Colours:
+### Colours:
 The justification for my choice the colours below are inline with the overall design flow. I chose to use a circular radial-gradient css function as it would allow me to use multiple shades of blue and would create a smooth transition from one colour to the next.
 * Background colour - #1c7fc2, #009cdc, #0d9ade, #011844. 
 
 
-Wireframe Diagrams:
-Before beginning the project I created 3 wireframe diagrams using the wireframe software Balsamiq. Below are links to the wireframe diagrams that the were used in development.  
+### Wireframe Diagrams:
+Before beginning the project I created 3 wireframe diagrams using the wireframe software Balsamiq. Below are links to the wireframe diagrams that the were used in development. When I started the project I initially chose to go with the second design, but later into the project when I began designing the front-end I chose to go with first design as I wanted to create a user friendly design. Below, you can see my wireframes designs for both Desktop and Mobile devices. 
 * [Desktop](https://github.com/Gavin-1001/My-Weather/blob/main/Project_2_Wireframes/wireframe2.bmpr)
 * [Mobile](https://github.com/Gavin-1001/Gavin-1001.github.io/blob/main/assets/images/wireframes/wireframe3_mobile.bmpr)
 
 
-Fonts:
-The fonts that are used in the project are from the Google Fonts library. Initially, I chose to use Open Sans and Quicksand, but after viewing the font in development I changed my mind and decided to use Noto Sans and Red Hat Mono. 
+### Fonts:
+The fonts that are used in the project are from the Google Fonts library. Initially, I chose to use Open Sans and Quicksand, but after viewing the font in development I changed my mind and decided to use Noto Sans and Red Hat Mono. I have added san-serif as a backup in case there is an error with Google Font and the fonts cannot be loaded in.  
 
-* All heading tags - Noto Sans sans-serif.
-* All p tags - Red Hat Mono, sans-serif.
+* All heading tags - [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans?query=Noto+Sans), sans-serif. 
+* All p tags - [Red Hat Mono](https://fonts.google.com/specimen/Red+Hat+Mono?query=Red+Hat), sans-serif.
 
 
-Images:
+### Images:
 * There are both icons and images that are used throughtout the application. The icons are from [Font Awesome](https://fontawesome.com/). All images are from the [OpenWeather API](https://openweathermap.org/weather-conditions). 
 
 	
 ## Technologies
 * [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started)
-* [JavaScript]
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [Bootstrap 5](https://getbootstrap.com/)
 * [jQuery](https://jquery.com/)
 ### Other Technologies 
@@ -105,18 +104,17 @@ $ git clone https://github.com/Gavin-1001/Gavin-1001.github.io.git
 There were no major issues in the development of this application.
 
 ## Testing
-* For the testing portion of this project, I used W3C HTML Validation Service to validate my HTML, and again I used W3C CSS Validation to validate my CSS. Below I have linked the screenshots of my error free [HTML](https://github.com/Gavin-1001/My-Weather/blob/main/assets/images/validator%20images/HTML_Validation.png) and [CSS](https://github.com/Gavin-1001/My-Weather/blob/main/assets/images/validator%20images/CSS_Validation.png). 
+* For the testing portion of this project, I used W3C HTML Validation Service to validate my HTML, and again I used W3C CSS Validation to validate my CSS. Below I have linked the screenshots of my error free [HTML](https://github.com/Gavin-1001/My-Weather/blob/main/assets/images/testing_screenshot/validator%20images/HTML_Validation.png) and [CSS](https://github.com/Gavin-1001/My-Weather/blob/main/assets/images/testing_screenshot/validator%20images/CSS_Validation.png). 
 
-To test the entire application I used a Chrome extension [Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools). Lighthouse is an open-source, automated tool for improving the quality of web pages. I have attached a [screenshot]() of the automation testing report that was performed on the website.  
+To test the entire application I used a Chrome extension [Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools). Lighthouse is an open-source, automated tool for improving the quality of web pages. I have attached a [screenshot](https://github.com/Gavin-1001/My-Weather/blob/main/assets/images/testing_screenshot/index_chrome_lighthouse_test_screenshot.PNG) of the automation testing report that was performed on the website.  
 
 ## Deployment
-
 ### Local Deployment
 * Assuming you are using Gitpod, download the gitpod extension for [Chrome](https://chrome.google.com/webstore/detail/gitpod-always-ready-to-co/dodmmooeoklaejobgleioelladacbeki) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/gitpod/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search).
 * Return to my github repository.
 * On the upper right corner of the repository there is a green "Gitpod" button, click it, this will take you to Gitpod.
 * Create an account if you do not have one, otherwise login.
-* Github may ask you to authorize Gitpod. Click "Authorize gitpod-io
+* Github may ask you to authorize Gitpod. Click "Authorize gitpod-io.
 * Gitpod will now open the repository.
 
 ### Remote Deployment
@@ -129,7 +127,7 @@ To test the entire application I used a Chrome extension [Lighthouse](https://de
 #### Cloning
 * Navigate to the main page of the repository. 
 * Above the file display/structure of the repository on the top right, click the green "Code" dropdown.
-* To clone using HTTPS, copy the link using the clipboard icon. See [image](https://github.com/Gavin-1001/My-Weather/blob/main/assets/images/github_screenshots/cloning-repo%20.png) for reference on where to find the link to clone.
+* To clone using HTTPS, copy the link using the clipboard icon. See [image](https://github.com/Gavin-1001/My-Weather/blob/main/assets/images/github_screenshots/cloning-repo.png) for reference on where to find the link to clone.
 * Open a terminal/command prompt window.
 * Create a folder to the location where you want to store the cloned repository. 
 * In the terminal type, and press enter.
@@ -145,4 +143,7 @@ $ cd folder
 $ git clone https://github.com/Gavin-1001/Gavin-1001.github.io.git
 ```
 * Open the folder in your favourite IDE, and the code should be displayed. 
+
+## References:
+* OpenWeather API [documentation](https://openweathermap.org/api)
 
