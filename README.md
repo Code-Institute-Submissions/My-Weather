@@ -63,7 +63,7 @@ The justification for my choice the colours below are inline with the overall de
 ### Wireframe Diagrams:
 Before beginning the project I created 3 wireframe diagrams using the wireframe software Balsamiq. Below are links to the wireframe diagrams that the were used in development. When I started the project I initially chose to go with the second design, but later into the project when I began designing the front-end I chose to go with first design as I wanted to create a user friendly design. Below, you can see my wireframes designs for both Desktop and Mobile devices. 
 * [Desktop](https://github.com/Gavin-1001/My-Weather/blob/main/Project_2_Wireframes/wireframe2.bmpr)
-* [Mobile](https://github.com/Gavin-1001/Gavin-1001.github.io/blob/main/assets/images/wireframes/wireframe3_mobile.bmpr)
+* [Mobile](https://github.com/Gavin-1001/My-Weather/blob/main/Project_2_Wireframes/Project_2_Wireframe_Mobile.bmpr)
 
 
 ### Fonts:
