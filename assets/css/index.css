@@ -70,11 +70,11 @@ h2, h3{
   font-weight: 400;
 }
 
+
 .weather_indicator::before {
-  content: "";
   display: inline-block;
   vertical-align: middle;
-  width: 30px;
+  width: 0px;
   height: 30px;
   background-size: cover;
   margin-right: 10px;
