@@ -168,12 +168,12 @@ let updateForecast = (forecast) => {
 
 // get day info
 let dayOfWeek = (dt = new Date().getTime()) => {
-    return new Date(dt).toLocaleDateString("en-EN", { weekday: "long" });
+    return new Date(dt).toLocaleDateString("en-IE", { weekday: "short" });
 };
 
   // get calender info
 let calenderInfo = () => {
-    return new Date().toLocaleDateString("en-EN", { calendar: "long" });
+    return new Date().toLocaleDateString("en-IE", { calendar: "short" });
 };
 
 // get wind info
