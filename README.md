@@ -32,7 +32,7 @@
 
 * Existing user:
 	i. I am an existing user and I would like to easily check the weather
-	ii.  I am an existing user and I would like a UI that is easy navigable.
+	ii. I am an existing user and I would like a UI that is easy navigable.
 	
 
 * Site developer:
@@ -76,12 +76,17 @@ The fonts that are used in the project are from the Google Fonts library. Initia
 * All heading tags - Noto Sans sans-serif.
 * All p tags - Red Hat Mono, sans-serif.
 
+
+Images:
+* There are both icons and images that are used throughtout the application. The icons are from [Font Awesome](https://fontawesome.com/). All images are from the [OpenWeather API](https://openweathermap.org/weather-conditions). 
+
 	
 ## Technologies
 * [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started)
 * [JavaScript]
 * [Bootstrap 5](https://getbootstrap.com/)
+* [jQuery](https://jquery.com/)
 ### Other Technologies 
 * [OpenWeatherAPI](https://openweathermap.org/api)
 * [Google Font](https://fonts.google.com/)
@@ -122,7 +127,7 @@ There were no major issues in the development of this application.
 #### Cloning
 * Navigate to the main page of the repository. 
 * Above the file display/structure of the repository on the top right, click the green "Code" dropdown.
-* To clone using HTTPS, copy the link using the clipboard icon. See [image](https://github.com/Gavin-1001/Gavin-1001.github.io/blob/main/assets/images/github_images/cloning-repo.PNG) for reference on where to find the link to clone.
+* To clone using HTTPS, copy the link using the clipboard icon. See [image](https://github.com/Gavin-1001/My-Weather/blob/main/assets/images/github_screenshots/cloning-repo%20.png) for reference on where to find the link to clone.
 * Open a terminal/command prompt window.
 * Create a folder to the location where you want to store the cloned repository. 
 * In the terminal type, and press enter.
