@@ -1,4 +1,5 @@
 # My-Weather - JavaScript Essentials Portfolio 2
+![Index screenshot](https://github.com/Gavin-1001/My-Weather/blob/main/assets/images/github_screenshots/website_screenshot.png)
 ## Table of contents
 * [General Introduction](#general-introduction)
 * [User Experience](#user-experience)
