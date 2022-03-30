@@ -109,6 +109,8 @@ $ git clone https://github.com/Gavin-1001/Gavin-1001.github.io.git
 ## Testing:
 * For the testing portion of this project, I used W3C HTML Validation Service to validate my HTML, and again I used W3C CSS Validation to validate my CSS. Below I have linked the screenshots of my error free [HTML](https://github.com/Gavin-1001/My-Weather/blob/main/assets/images/testing_screenshot/validator%20images/HTML_Validation.png) and [CSS](https://github.com/Gavin-1001/My-Weather/blob/main/assets/images/testing_screenshot/validator%20images/CSS_Validation.png). 
 
+To test the JavaScript I used an online compiler JSHint that shows errors and warning in JS code. I copied and pasted my JavaScript code into the textbox and I recieved only warning regard async functions. After researching the warnings on Google, I realised they are nothing to be concerned about, I learned that JSHint uses ES6 to compile code on the online tool, but you can configure the npm version of JSHint to compile on ES8. The screenshot of error free JavaScript code can be seen [here](https://github.com/Gavin-1001/My-Weather/blob/main/assets/images/testing_screenshot/js_hint_screenshot.PNG). 
+
 To test the entire application I used a Chrome extension [Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools). Lighthouse is an open-source, automated tool for improving the quality of web pages. I have attached a [screenshot](https://github.com/Gavin-1001/My-Weather/blob/main/assets/images/testing_screenshot/index_chrome_lighthouse_test_screenshot.PNG) of the automation testing report that was performed on the website.  
 
 ## Deployment:
